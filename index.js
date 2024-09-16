@@ -1,10 +1,13 @@
             const express=require("express");
             const userRouters = require("./route/user");
             const productRoute = require("./route/product");
+            const connectDb = require("./config/db");
 
             const app=express();//ye app ke ander sara server ban gay ahai
 
             app.use(express.json());
+
+            connectDb();
 
             const users = [{
                 username : "hemant",

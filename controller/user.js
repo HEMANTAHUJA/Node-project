@@ -1,5 +1,6 @@
 const users = require("../user");
 
+
 exports.getUsers = (req,res)=>{
 
     // res.send({message : "User fetched",data : users});
